@@ -6,28 +6,28 @@ spec:
   hosts:
   - ip: 192.168.122.100
     hostnames:
-    - edpm-compute-0.ctlplane
+    - tigon06.ctlplane
   - ip: 172.17.0.100
     hostnames:
-    - edpm-compute-0.internalapi
+    - tigon06.internalapi
   - ip: 172.18.0.100
     hostnames:
-    - edpm-compute-0.storage
+    - tigon06.storage
   - ip: 172.19.0.100
     hostnames:
-    - edpm-compute-0.tenant
+    - tigon06.tenant
   - ip: 192.168.122.101
     hostnames:
-    - edpm-compute-1.ctlplane
+    - tigon19.ctlplane
   - ip: 172.17.0.101
     hostnames:
-    - edpm-compute-1.internalapi
+    - tigon19.internalapi
   - ip: 172.18.0.101
     hostnames:
-    - edpm-compute-1.storage
+    - tigon19.storage
   - ip: 172.19.0.101
     hostnames:
-    - edpm-compute-1.tenant
+    - tigon19.tenant
   - ip: 172.17.0.80
     hostnames:
     - keystone-internal.openstack.svc

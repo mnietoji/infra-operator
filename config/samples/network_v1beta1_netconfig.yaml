@@ -23,16 +23,17 @@ spec:
       - end: 172.17.0.250
         start: 172.17.0.100
       cidr: 172.17.0.0/24
-      vlan: 20
+      vlan: 142
   - name: external
     dnsDomain: external.example.com
     subnets:
     - name: subnet1
       allocationRanges:
-      - end: 10.0.0.250
-        start: 10.0.0.100
-      cidr: 10.0.0.0/24
-      gateway: 10.0.0.1
+      - end: 10.46.141.11
+        start: 10.46.141.2
+      cidr: 10.46.141.14/28
+      gateway: 10.46.141.14
+      vlan: 396
   - name: storage
     dnsDomain: storage.example.com
     subnets:
@@ -41,7 +42,7 @@ spec:
       - end: 172.18.0.250
         start: 172.18.0.100
       cidr: 172.18.0.0/24
-      vlan: 21
+      vlan: 143
   - name: storagemgmt
     dnsDomain: storagemgmt.example.com
     subnets:
@@ -50,7 +51,7 @@ spec:
       - end: 172.20.0.250
         start: 172.20.0.100
       cidr: 172.20.0.0/24
-      vlan: 23
+      vlan: 145
   - name: tenant
     dnsDomain: tenant.example.com
     subnets:
@@ -59,4 +60,4 @@ spec:
       - end: 172.19.0.250
         start: 172.19.0.100
       cidr: 172.19.0.0/24
-      vlan: 22
+      vlan: 144
